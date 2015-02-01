@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="topPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computer_graphics.controller.gui.CanvasController">
+   <children>
+      <AnchorPane>
+         <children>
+            <Group AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="114.0">
+               <children>
+                  <Label contentDisplay="RIGHT" layoutX="1220.0" layoutY="114.0" prefHeight="33.0" prefWidth="244.0" text="ShearX">
+                     <graphic>
+                        <Slider fx:id="txslider" prefHeight="14.0" prefWidth="181.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="BOTTOM" layoutX="1391.0" layoutY="217.0" text="ScaleZ">
+                     <graphic>
+                        <Slider fx:id="scaleZSlider" blockIncrement="5.0" majorTickUnit="10.0" max="25.0" min="1.0" orientation="VERTICAL" prefHeight="167.0" prefWidth="14.0" showTickLabels="true" value="1.0" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="BOTTOM" layoutX="1324.0" layoutY="215.0" text="ShearY">
+                     <graphic>
+                        <Slider fx:id="tyslider" orientation="VERTICAL" prefHeight="163.0" prefWidth="14.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="BOTTOM" layoutX="1264.0" layoutY="217.0" text="ScaleY">
+                     <graphic>
+                        <Slider fx:id="scaleYSlider" majorTickUnit="5.0" max="25.0" min="1.0" orientation="VERTICAL" prefHeight="166.0" prefWidth="14.0" showTickLabels="true" value="1.0" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="1235.0" layoutY="164.0" text="ScaleX">
+                     <graphic>
+                        <Slider fx:id="scaleXSlider" blockIncrement="2.0" max="25.0" min="1.0" prefHeight="14.0" prefWidth="174.0" showTickLabels="true" value="1.0" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="1230.0" layoutY="68.0" prefHeight="17.0" prefWidth="224.0" text="ShearZ">
+                     <graphic>
+                        <Slider fx:id="tzslider" prefHeight="14.0" prefWidth="174.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+               </children>
+            </Group>
+            <Group AnchorPane.bottomAnchor="27.69921875">
+               <children>
+                  <Label contentDisplay="RIGHT" layoutX="436.0" layoutY="538.0" text="TranslateZ">
+                     <graphic>
+                        <Slider fx:id="translateZSlider" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="71.0" layoutY="546.0" text="RotationZ-axis">
+                     <graphic>
+                        <Slider fx:id="rotationZSlider" max="360.0" prefHeight="14.0" prefWidth="178.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="71.0" layoutY="502.0" prefHeight="17.0" prefWidth="270.0" text="RotationY-axis">
+                     <graphic>
+                        <Slider fx:id="rotationYslider" max="360.0" prefHeight="14.0" prefWidth="178.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="436.0" layoutY="494.0" text="TranslaetY">
+                     <graphic>
+                        <Slider fx:id="translateYSlider" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="71.0" layoutY="456.0" text="RotationX-axis">
+                     <graphic>
+                        <Slider fx:id="rotationSlider" max="360.0" prefHeight="33.0" prefWidth="189.0" showTickLabels="true" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" layoutX="436.0" layoutY="455.0" text="TranslateX">
+                     <graphic>
+                        <Slider fx:id="translateXSlider" />
+                     </graphic>
+                  </Label>
+               </children>
+            </Group>
+            <StackPane fx:id="mainPane" layoutY="2.0" prefHeight="450.0" prefWidth="552.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SubScene fx:id="scene" fill="#a49999" height="450.0" width="552.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <root>
+                      <Region />
+                    </root>
+                  </SubScene>
+               </children>
+            </StackPane>
+            <ToggleButton layoutX="858.0" layoutY="35.0" mnemonicParsing="false" onAction="#fillshape" text="LineView" AnchorPane.rightAnchor="77.0" />
+            <ComboBox fx:id="shapeCombo" layoutX="827.0" layoutY="488.0" onAction="#selectValue" prefWidth="150.0" promptText="Select Shape" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

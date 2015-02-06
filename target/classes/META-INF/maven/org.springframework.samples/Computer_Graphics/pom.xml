@@ -33,8 +33,56 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.1.6.RELEASE</version>
     </parent>
-	
-	<dependencies>
+	<repositories>
+   		<repository>
+       	<!-- DO NOT set id to "local" because it is reserved by Maven -->
+       	<id>lib</id>
+       	<url>file://${project.basedir}/lib</url>
+   		</repository>
+	</repositories>
+
+<dependencies>
+<!-- 3D model importers -->
+    
+ <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jim3dsModelImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+ <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jimColModelImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+  <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jimObjModelImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+  <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jimFxmlModelImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+  <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jimStlMeshImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+  <dependency>
+         <groupId>jim3dModelImporter</groupId>
+         <artifactId>jimX3dModelImporterJFX</artifactId>
+         <version>1.0</version>
+ </dependency>
+ 
+ 
+ 
+
 		<!-- Spring and Transactions -->
 		
 		<dependency>
@@ -89,8 +137,16 @@
 			<version>${hibernate.version}</version>
 		</dependency>
 
+	<dependency>
+        <groupId>com.</groupId>
+         <artifactId>javafx-basic-archetype-2.0.1.jar</artifactId>
+         <scope>system</scope>
+         <version>1.0</version>
+         <systemPath>H:\softwares\Javafx\javafx-basic-archetype-2.0.1.jar</systemPath>
+      </dependency>
+	
 <dependency>
-         <groupId>javafx-basic-archetype-2.0.1.jar</groupId>
+        <groupId>javafx-basic-archetype-2.0.1.jar</groupId>
          <artifactId>javafx-basic-archetype-2.0.1.jar</artifactId>
          <scope>system</scope>
          <version>1.0</version>
@@ -125,55 +181,6 @@
          <version>1.0</version>
          <systemPath>H:\softwares\Javafx\javafx-ui-swing.jar</systemPath>
  </dependency>
- 
- <!-- 3D model importers -->
- <dependency>
-         <groupId>jim3dsModelImporterJFX.jar</groupId>
-         <artifactId>jim3dsModelImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jim3dsModelImporterJFX.jar</systemPath>
- </dependency>
- 
- <dependency>
-         <groupId>jimColModelImporterJFX.jar</groupId>
-         <artifactId>jimColModelImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jimColModelImporterJFX.jar</systemPath>
- </dependency>
- 
- <dependency>
-         <groupId>jimFxmlModelImporterJFX.jar</groupId>
-         <artifactId>jimFxmlModelImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jimFxmlModelImporterJFX.jar</systemPath>
- </dependency>
- 
- <dependency>
-         <groupId>jimObjModelImporterJFX.jar</groupId>
-         <artifactId>jimObjModelImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jimObjModelImporterJFX.jar</systemPath>
- </dependency>
- 
- <dependency>
-         <groupId>jimStlMeshImporterJFX.jar</groupId>
-         <artifactId>jimStlMeshImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jimStlMeshImporterJFX.jar</systemPath>
- </dependency>
- 
- <dependency>
-         <groupId>jimX3dModelImporterJFX.jar</groupId>
-         <artifactId>jimX3dModelImporterJFX.jar</artifactId>
-         <scope>system</scope>
-         <version>1.0</version>
-         <systemPath>H:\softwares\Javafx\JFX3DModelImporters_EA_2014-02-09\jimX3dModelImporterJFX.jar</systemPath>
- </dependency>
 		
 		<!-- Test Artifacts -->
 		<dependency>
@@ -190,8 +197,7 @@
 		</dependency>
 
 	</dependencies>	
-	
-		<build>
+<build>
 	<pluginManagement>
 			<plugins>
 				<plugin>

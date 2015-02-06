@@ -42,10 +42,7 @@ public void start(Stage primaryStage) {
 		CanvasController basementController = fxmlLoader.getController();
 	
 		Scene scene = new Scene(root2,800,600,true);
-
-		
-
-		
+	
 		primaryStage.setScene(scene);
 		
 		primaryStage.show();

@@ -135,46 +135,28 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.</groupId>
-      <artifactId>javafx-basic-archetype-2.0.1.jar</artifactId>
+      <groupId>javafx</groupId>
+      <artifactId>javafx-basic-archetype-2.0.1</artifactId>
       <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-basic-archetype-2.0.1.jar</systemPath>
+      <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>javafx-basic-archetype-2.0.1.jar</groupId>
-      <artifactId>javafx-basic-archetype-2.0.1.jar</artifactId>
+      <groupId>javafx</groupId>
+      <artifactId>javafx-common</artifactId>
       <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-basic-archetype-2.0.1.jar</systemPath>
+      <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>javafx-common.jar</groupId>
-      <artifactId>javafx-common.jar</artifactId>
+      <groupId>javafx</groupId>
+      <artifactId>javafx-ui-controls</artifactId>
       <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-common.jar</systemPath>
+      <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>javafx-ui-controls.jar</groupId>
-      <artifactId>javafx-ui-controls.jar</artifactId>
+      <groupId>javafx</groupId>
+      <artifactId>javafx-ui-swing</artifactId>
       <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-ui-controls.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>javafx-ui-desktop.jar</groupId>
-      <artifactId>javafx-ui-desktop.jar</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-ui-desktop.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>javafx-ui-swing.jar</groupId>
-      <artifactId>javafx-ui-swing.jar</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>H:\softwares\Javafx\javafx-ui-swing.jar</systemPath>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>

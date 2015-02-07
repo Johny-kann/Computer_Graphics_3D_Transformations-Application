@@ -179,7 +179,7 @@ public class CanvasController {
        
         
         ObjModelImporter obj = new ObjModelImporter();
-		URL location = this.getClass().getResource("/sonyericsson.obj");
+		URL location = this.getClass().getResource("/cow.obj");
 		
 
 		obj.read(location);
